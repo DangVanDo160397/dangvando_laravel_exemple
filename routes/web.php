@@ -94,14 +94,6 @@ Route::group(['prefix' => 'admin','middleware' => 'adminLogin'],function() {
 	});
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('trangchu','PagesController@trangchu');
 Route::get('lienhe','PagesController@lienhe');
 Route::get('gioithieu','PagesController@gioithieu');
